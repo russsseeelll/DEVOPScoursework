@@ -30,7 +30,7 @@ public class Dec2Hex {
         int num = arg1;
         StringBuilder hexadecimal = new StringBuilder();
 
-        LOGGER.info("Converting the Decimal Value " + num + " to Hex...");
+     	LOGGER.log(Level.INFO, "Converting the Decimal Value {0} to Hex...", num);
 
         while (num != 0) {
             rem = num % 16;
